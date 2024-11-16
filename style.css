@@ -1,0 +1,374 @@
+*,
+*::after,
+*::before,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  color: var(--dark);
+}
+
+body {
+  min-height: 5000px;
+  overflow-x: hidden;
+}
+
+img,
+.container {
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --dark: #032b43;
+  --light: #fff;
+  --accent: #ffba08;
+  --dark-accent: #3f88c5;
+}
+
+/* Jiggle Animation */
+@keyframes jiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+/* Jiggle Animation End */
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  /* max-width: fit-content; */
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  margin: 1em auto 0 auto;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  padding: 1em 3em;
+  border-radius: 2em;
+  position: fixed;
+  z-index: 999;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25em;
+}
+
+header .logo a {
+  text-decoration: none;
+}
+
+header nav .link ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+header nav .link ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+header nav .link ul li a:hover {
+  color: var(--accent);
+}
+
+header nav .link ul li .join-btn {
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: var(--accent);
+  color: var(--light);
+  border-bottom: 3px solid rgba(3, 43, 67, 0.3);
+}
+
+header nav .link ul li .join-btn:hover {
+  background-color: #ffcb48;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  color: var(--light);
+}
+
+header nav .link ul li .join-btn svg {
+  fill: #fff;
+}
+
+header nav .link ul li .join-btn:hover svg {
+  fill: #fff;
+}
+
+header nav .link ul li a svg {
+  fill: var(--dark);
+  transition: all 0.2s ease-in-out;
+  margin-right: 0.2em;
+  width: 20px;
+}
+
+header nav .link ul li a:hover svg {
+  fill: var(--accent);
+}
+
+header nav .link ul li .search-icon {
+  display: flex;
+  align-items: center;
+}
+
+header nav .link ul li .search-icon i::before {
+  font-size: 1.5em;
+  color: var(--dark);
+  transition: all 0.2s ease-in-out;
+}
+
+header nav .link ul li .search-icon:hover i::before {
+  color: #ffba08;
+}
+
+/* Media Query */
+@media /* Media Query End */ main {
+  padding: 5em 3em 0 3em;
+}
+
+main .hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6em 3em 0;
+}
+
+main .hero-container .hero-left {
+  max-width: 50%;
+}
+
+main .hero-container .hero-left .intro h1 {
+  font-size: 3.5em;
+  color: var(--accent);
+}
+
+main .hero-container .hero-left .intro p {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+main .hero-container .hero-left .intro p span a {
+  color: var(--dark-accent);
+  text-decoration: underline;
+  font-weight: 600;
+  font-style: italic;
+}
+
+main .hero-container .hero-left .hero-btn ul {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+  align-items: center;
+}
+
+main .hero-container .hero-left .hero-btn ul li:first-child a {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: var(--accent);
+  color: var(--light);
+  border-bottom: 3px solid rgba(3, 43, 67, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  font-weight: 500;
+}
+
+main .hero-container .hero-left .hero-btn ul li:first-child a i::before {
+  color: #fff;
+  font-size: 1em;
+}
+
+main .hero-container .hero-left .hero-btn ul li:first-child a:hover {
+  background-color: #ffcb48;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  color: var(--light);
+}
+
+main .hero-container .hero-left .hero-btn ul li:first-child a:hover i::before {
+  animation: jiggle 0.5s ease-in-out infinite;
+  -webkit-animation: jiggle 0.5s ease-in-out infinite;
+}
+
+main .hero-container .hero-left .hero-btn ul li:nth-child(2) a {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 3px solid var(--accent);
+  transition: all 0.2s ease-in-out;
+}
+
+main .hero-container .hero-left .hero-btn ul li:nth-child(2) a:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  background-color: #fff6e1;
+}
+
+main .hero-container .hero-left .hero-btn ul li:nth-child(2) a:hover i::before {
+  animation: jiggle 0.5s ease-in-out infinite;
+}
+
+main .hero-container .hero-right {
+  display: flex;
+  justify-content: right;
+  position: relative;
+}
+
+main .hero-container .hero-right .hero-img {
+  transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  object-fit: cover;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.2));
+  -webkit-filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.2));
+}
+
+/* main .hero-container .hero-right .bg-color {
+  background-color: var(--accent);
+  z-index: -1;
+  width: 20em;
+  height: 20em;
+  position: absolute;
+  top: -20%;
+  right: -30%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+} */
+
+main .hero-container .hero-right svg {
+  position: absolute;
+  z-index: -1;
+  top: -8%;
+  right: -15%;
+}
+
+main .hero-container .hero-right .photoshop {
+  width: 4.5em;
+  height: 4.5em;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  right: 85%;
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+}
+
+main .hero-container .hero-right .illustrator {
+  width: 3.9em;
+  height: 3.9em;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  right: 87%;
+  transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+}
+
+main .hero-container .hero-right .premierepro {
+  width: 4.7em;
+  height: 4.7em;
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  right: 80%;
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+}
+
+main .hero-container .hero-right .coreldraw {
+  width: 5em;
+  height: 5em;
+  position: absolute;
+  z-index: 1;
+  top: 3%;
+  right: 65%;
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+}
+
+main .hero-container .hero-right .filmora {
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  z-index: 1;
+  top: 75%;
+  right: 60%;
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+}
+
+#about-us {
+  padding-top: 5em;
+}
+
+#about-us .container {
+  background-color: var(--accent);
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+#about-us img {
+  max-width: 35em;
+  position: absolute;
+  top: 95%;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  z-index: 2;
+}
+
+#about-us svg {
+  position: absolute;
+  z-index: 1;
+  left: -5%;
+}

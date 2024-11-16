@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Art</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- My Fonts End -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <div class="nav-container">
+      <header>
+        <nav>
+          <div class="logo">
+            <a href="#"><h2>Digital Art</h2></a>
+          </div>
+          <div class="link">
+            <ul>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-house"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"
+                    /></svg
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-people"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"
+                    />
+                  </svg>
+                  Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-images"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                    <path
+                      d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z"
+                    /></svg
+                  >Galeri</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-award"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"
+                    />
+                    <path
+                      d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"
+                    />
+                  </svg>
+                  Prestasi</a
+                >
+              </li>
+              <li>
+                <a href="#" class="join-btn"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-person-plus"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"
+                    /></svg
+                  >Gabung</a
+                >
+              </li>
+              <li>
+                <span class="search-icon"><i class="bi-search"></i></span>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <!-- Navbar Section -->
+
+    <!-- Hero Section -->
+    <main>
+      <div class="hero-container">
+        <div class="hero-left">
+          <div class="intro">
+            <h1>Selamat datang!</h1>
+            <p>
+              Bergabunglah dengan kami dalam perjalanan seru untuk menjadikan
+              <span
+                ><a
+                  href="https://www.instagram.com/sman1jampangtengah_official/"
+                  target="_blank"
+                  >SMAN 1 Jampangtengah</a
+                ></span
+              >
+              pusat kreativitas dan inovasi! Bersama, kita bisa meraih
+              keberhasilan dan saling menginspirasi!
+            </p>
+          </div>
+          <div class="hero-btn">
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/digitalart_smanjat/"
+                  target="_blank"
+                  >Ikuti Kami <i class="bi-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#">Kontak Kami <i class="bi-telephone"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="./img/image-hero.webp" alt="Image 1" class="hero-img" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 700 700"
+            style="overflow: hidden; display: block"
+            width="35em"
+            height="35em"
+            class="splatter"
+          >
+            <defs></defs>
+            <g id="two-0" transform="matrix(1 0 0 1 0 0)" opacity="1">
+              <path
+                transform="matrix(1 0 0 1 350 350)"
+                id="two-14"
+                d="M 195.352029 57.360531 C 192.302723 94.786573 270.279286 129.272167 247.012701 158.745423 C 217.894427 195.631385 145.005348 95.615117 108.585869 125.314773 C 77.464161 150.694159 147.787285 227.273582 112.770995 246.934034 C 83.374899 263.438939 60.299694 183.287635 27.429801 190.778457 C -17.662286 201.054632 0.346498 321.384343 -44.70559 310.934206 C -102.650092 297.493585 -6.857536 158.099517 -59.976887 131.331062 C -99.971085 111.176771 -135.717256 223.102158 -175.505345 202.543964 C -200.821937 189.463079 -162.102807 137.631723 -181.077586 116.371497 C -210.873347 82.98694 -306.040271 136.288991 -314.531465 92.35477 C -325.42089 36.011881 -170.053561 57.313924 -167.187402 0 C -165.063642 -42.468323 -274.779372 -36.857785 -268.994003 -78.983766 C -264.659082 -110.548351 -198.279673 -89.612912 -179.581034 -115.409723 C -163.093566 -138.155982 -199.054654 -188.472044 -173.586381 -200.329363 C -128.107793 -221.50293 -96.797405 -91.234712 -50.650083 -110.908212 C -12.753324 -127.064337 -74.165801 -226.714474 -33.729716 -234.595323 C 1.377765 -241.437646 -13.907229 -151.315549 20.212911 -140.583885 C 39.72 -134.448402 57.707738 -175.587734 76.267014 -167.001467 C 94.94839 -158.358713 74.120333 -115.994031 92.528374 -106.783437 C 154.086763 -75.982259 248.162905 -241.297489 286.300562 -183.9942 C 322.232253 -130.005458 137.800004 -107.594299 148.715566 -43.666831 C 154.211803 -11.477881 229.752837 -31.719187 237.513654 -0.000001 C 243.09688 22.819172 197.259753 33.945843 195.352029 57.360531 Z "
+                fill="var(--accent)"
+                stroke="undefined"
+                stroke-width="1"
+                stroke-opacity="1"
+                fill-opacity="1"
+                visibility="visible"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="4"
+              ></path>
+            </g>
+          </svg>
+          <!-- <div class="bg-color"></div> -->
+          <img
+            src="img/photoshop.webp"
+            alt="Adobe Photoshop"
+            class="photoshop"
+          />
+          <img
+            src="img/illustrator.webp"
+            alt="Adobe Illustrator"
+            class="illustrator"
+          />
+          <img
+            src="img/premierepro.webp"
+            alt="Adobe Premiere Pro"
+            class="premierepro"
+          />
+          <img src="img/coreldraw.webp" alt="Coreldraw" class="coreldraw" />
+          <img
+            src="img/filmora.webp"
+            alt="Wondershare Filmora"
+            class="filmora"
+          />
+        </div>
+      </div>
+    </main>
+    <!-- Hero Section End -->
+
+    <!-- About Us Section -->
+    <section id="about-us">
+      <img src="img/image-about.webp" alt="" />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 700 700"
+        style="overflow: hidden; display: block"
+        width="35em"
+        height="35em"
+      >
+        <defs></defs>
+        <g id="two-0" transform="matrix(1 0 0 1 0 0)" opacity="1">
+          <path
+            transform="matrix(1 0 0 1 350 350)"
+            id="two-62"
+            d="M 134.905529 39.611837 C 124.256591 47.339139 111.543573 57.461281 109.677491 70.485444 C 104.103174 109.390922 162.521099 141.384322 156.110152 180.16072 C 152.160985 204.047126 131.475744 233.956408 107.284251 234.919743 C 68.402751 236.468052 60.96776 152.861307 22.059565 153.427646 C -2.203873 153.78082 -12.016163 189.034197 -29.585554 205.772046 C -64.516422 239.04967 -97.638408 328.926515 -138.507273 303.288621 C -200.947211 264.118741 -21.469913 137.330931 -76.792316 88.623056 C -126.832859 44.565526 -225.261602 224.006385 -262.329068 168.588654 C -296.802999 117.048388 -109.899148 96.892838 -127.711525 37.499486 C -146.595188 -25.46595 -291.531602 57.522171 -323.350443 0 C -337.954924 -26.402013 -315.421028 -68.634887 -290.212067 -85.213952 C -244.112146 -115.53228 -153.435534 -33.022623 -123.122585 -79.126081 C -95.100428 -121.745435 -206.838841 -170.734338 -189.510822 -218.707147 C -180.370398 -244.01251 -142.300538 -255.590167 -115.523694 -252.961605 C -79.608989 -249.43602 -63.182671 -187.370169 -27.116208 -188.597364 C -0.587793 -189.500018 13.169553 -224.51039 34.542824 -240.250621 C 68.205241 -265.041128 106.668073 -332.636652 141.046859 -308.849542 C 194.992742 -271.523714 62.146391 -168.627397 99.224019 -114.510623 C 111.18148 -97.058071 141.609129 -107.537066 162.539767 -104.457966 C 206.097909 -98.050141 276.62227 -126.668696 294.746807 -86.545472 C 308.87311 -55.273346 263.862847 -21.483353 237.105345 -0.000001 C 208.900653 22.645288 164.180725 18.368565 134.905529 39.611837 Z "
+            fill="#fff"
+            stroke="undefined"
+            stroke-width="1"
+            stroke-opacity="1"
+            fill-opacity="1"
+            visibility="visible"
+            stroke-linecap="butt"
+            stroke-linejoin="miter"
+            stroke-miterlimit="4"
+          ></path>
+        </g>
+      </svg>
+      <div class="container">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          eligendi corrupti voluptatum molestias aut neque, dolorem vero non
+          similique perferendis fugiat optio culpa commodi minus. Provident hic
+          blanditiis dicta cupiditate.
+        </p>
+      </div>
+    </section>
+    <!-- About Us Section End -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
